@@ -23,5 +23,5 @@ RUN apt-get update -qq && apt-get install -yq -qq --no-install-recommends \
 
 # add required python packages:
 RUN pip install git+https://github.com/tomwallis/PsyUtils
-RUN pip install bezier
+RUN pip install https://github.com/wichmann-lab/python-psignifit/zipball/master
 RUN chmod -R a+rw /home/jovyan
